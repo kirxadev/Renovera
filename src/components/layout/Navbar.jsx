@@ -50,6 +50,7 @@ export function Navbar() {
   }, [mobileMenuOpen]);
 
   return (
+    <>
     <header
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out flex items-center",
@@ -161,6 +162,8 @@ export function Navbar() {
         </div>
       </div>
 
+      </header>
+
       {/* Mobile Drawer */}
       <div
         className={cn(
@@ -185,6 +188,7 @@ export function Navbar() {
                           "text-base transition-colors",
                           pathname === child.href ? "text-primary font-medium" : "text-muted-foreground"
                         )}
+                        onClick={() => setMobileMenuOpen(false)}
                       >
                         {child.label}
                       </Link>
@@ -198,6 +202,7 @@ export function Navbar() {
                     "py-4 text-lg transition-colors flex items-center justify-between",
                     pathname === link.href ? "text-primary font-medium" : "text-foreground"
                   )}
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
@@ -212,6 +217,6 @@ export function Navbar() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
