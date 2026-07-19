@@ -18,7 +18,7 @@ export const projectsData = [
     year: "2024",
     area: "12,500 Sq Ft",
     timeline: "14 Months",
-    coverImage: "/images/luxury-dusk-villa.png",
+    coverImage: "/images/portfolio_hero_architecture.png",
     shortDescription: "A complete architectural masterpiece blending modern minimalism with tropical luxury. Featuring infinity pools, panoramic ocean views, and bespoke interior finishes.",
     featured: true
   },

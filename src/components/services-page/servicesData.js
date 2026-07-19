@@ -101,7 +101,7 @@ export const servicesPageData = {
       title: "Turnkey Design & Build",
       slug: "turnkey-build",
       category: "Architecture",
-      image: "/images/renovera-hero-architecture.png",
+      image: "/images/hero-architecture.png",
       description: "Our comprehensive master service handling every single detail from initial concept sketch to final furniture placement.",
       benefits: ["Single Point of Contact", "Fixed Pricing", "Seamless Execution"],
       timeline: "12 - 18 Months",

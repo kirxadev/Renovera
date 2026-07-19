@@ -9,7 +9,7 @@ export const articleDirectory = {
     lastUpdated: "Oct 15, 2025",
     readTime: "8 Min Read",
     views: "24.5K",
-    featuredImage: "/images/luxury-dusk-villa.png",
+    featuredImage: "/images/portfolio_hero_architecture.png",
     author: {
       name: "Sarah Jenkins, AIA",
       role: "Lead Architect at Renovera",
@@ -148,7 +148,7 @@ export const articleDirectory = {
         slug: "evolution-modern-architectural-glazing",
         title: "The Evolution of Modern Architectural Glazing",
         category: "Architecture",
-        image: "/images/luxury-dusk-villa.png",
+        image: "/images/portfolio_hero_architecture.png",
         readTime: "8 Min Read",
         date: "Oct 12, 2025"
       }

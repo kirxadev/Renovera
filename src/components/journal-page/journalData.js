@@ -31,7 +31,7 @@ export const journalPageData = {
       role: "Lead Architect",
       image: "/images/avatar-1.png"
     },
-    image: "/images/luxury-dusk-villa.png"
+    image: "/images/portfolio_hero_architecture.png"
   },
 
   articles: [

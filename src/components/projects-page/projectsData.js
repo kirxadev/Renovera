@@ -32,7 +32,7 @@ export const projectsPageData = {
     area: "12,500 sq ft",
     duration: "18 Months",
     story: "A masterful architectural transformation of a heritage estate into a modern glass pavilion, seamlessly blending indoor and outdoor living while preserving the property's historic foundation.",
-    image: "/images/luxury-dusk-villa.png",
+    image: "/images/portfolio_hero_architecture.png",
     slug: "glass-house-estate"
   },
 
@@ -170,7 +170,7 @@ export const projectsPageData = {
   ],
 
   categories: [
-    { name: "Luxury Villas", count: 42, image: "/images/luxury-dusk-villa.png" },
+    { name: "Luxury Villas", count: 42, image: "/images/portfolio_hero_architecture.png" },
     { name: "Architecture", count: 35, image: "/images/project-3.png" },
     { name: "Interior Design", count: 56, image: "/images/project-4.png" },
     { name: "Landscape Design", count: 28, image: "/images/service-2.png" }

@@ -5,7 +5,7 @@ export const processSteps = [
     shortName: "Discovery",
     title: "Discovery & Consultation",
     description: "The journey begins by deeply understanding your vision, lifestyle, and architectural preferences. We conduct a thorough site analysis and define project scope and budget.",
-    image: "/images/process-1.png",
+    image: "/images/process-discovery-new.png",
     timeline: "Weeks 1–2",
     deliverables: [
       "Understand client goals",

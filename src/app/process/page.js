@@ -1,4 +1,4 @@
-import { ProcessSection } from "@/components/process";
+import { ProcessSection, ProcessHero } from "@/components/process";
 import { ConsultationCTA } from "@/components/cta";
 
 export const metadata = {
@@ -8,7 +8,8 @@ export const metadata = {
 
 export default function ProcessPage() {
   return (
-    <main className="flex min-h-screen flex-col w-full bg-background pt-24 md:pt-32">
+    <main className="flex min-h-screen flex-col w-full bg-background">
+      <ProcessHero />
       <ProcessSection />
       <ConsultationCTA />
     </main>

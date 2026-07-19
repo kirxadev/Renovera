@@ -24,7 +24,7 @@ export const contactData = {
       phone: "+1 (555) 123-4567",
       email: "ny@renovera.studio",
       hours: "Mon-Fri: 9am - 6pm",
-      image: "/images/luxury-dusk-villa.png",
+      image: "/images/portfolio_hero_architecture.png",
       coordinates: { lat: 40.7128, lng: -74.0060 }
     },
     {
@@ -33,7 +33,7 @@ export const contactData = {
       phone: "+44 20 7123 4567",
       email: "london@renovera.studio",
       hours: "Mon-Fri: 9am - 6pm",
-      image: "/images/heritage-facade.png",
+      image: "/images/project-2.png",
       coordinates: { lat: 51.5074, lng: -0.1278 }
     }
   ],

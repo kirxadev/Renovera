@@ -3,7 +3,7 @@ export const aboutData = {
     badge: "About Renovera",
     heading: "Designing Spaces.\nBuilding Legacies.",
     description: "Renovera is a luxury architecture and renovation studio dedicated to creating timeless residential spaces through thoughtful design, exceptional craftsmanship, and transparent collaboration.",
-    image: "/images/renovera-hero-architecture.png",
+    image: "/images/hero-architecture.png",
     primaryCTA: "Explore Our Projects",
     secondaryCTA: "Book Consultation"
   },

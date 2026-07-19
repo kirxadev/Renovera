@@ -50,7 +50,7 @@ export function FAQSection({ service, className }) {
         </div>
 
         <div ref={containerRef} className="flex flex-col">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion className="w-full">
             {service.faqs.map((faq, idx) => (
               <AccordionItem 
                 key={idx} 

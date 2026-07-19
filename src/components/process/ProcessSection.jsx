@@ -6,7 +6,6 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "@/lib/utils";
 
-import { SectionHeader } from "./SectionHeader";
 import { TimelineNavigation } from "./TimelineNavigation";
 import { StepContent } from "./StepContent";
 import { ProcessInfo } from "./ProcessInfo";
@@ -20,28 +19,11 @@ export function ProcessSection({ className }) {
   const [activeStepId, setActiveStepId] = useState(processSteps[0].id);
   
   const sectionRef = useRef(null);
-  const headerRef = useRef(null);
   const infoRef = useRef(null);
   const stepsContainerRef = useRef(null);
   const stepRefs = useRef([]);
 
   useGSAP(() => {
-    // Reveal Header
-    gsap.fromTo(headerRef.current.children, 
-      { y: 40, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: headerRef.current,
-          start: "top 85%",
-        }
-      }
-    );
-
     // Track active step on scroll
     stepRefs.current.forEach((el, index) => {
       ScrollTrigger.create({
@@ -100,16 +82,7 @@ export function ProcessSection({ className }) {
     <section ref={sectionRef} className={cn("py-24 md:py-32 bg-background relative", className)}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
-        <div ref={headerRef} className="mb-16 md:mb-24">
-          <SectionHeader 
-            badge="Our Process"
-            title="From Vision To Reality."
-            highlight="To Reality."
-            description="Every successful renovation begins with a thoughtful process. From the first consultation to the final handover, we ensure precision, transparency, and exceptional craftsmanship at every stage."
-            alignment="left"
-          />
-        </div>
+        {/* Header removed and moved to ProcessHero */}
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 relative items-start">
           

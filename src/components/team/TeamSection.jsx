@@ -26,83 +26,93 @@ export function TeamSection({ className }) {
 
   useGSAP(() => {
     // Reveal Header
-    gsap.fromTo(headerRef.current.children, 
-      { y: 40, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: headerRef.current,
-          start: "top 85%",
+    if (headerRef.current) {
+      gsap.fromTo(headerRef.current.children, 
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.15,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: "top 85%",
+          }
         }
-      }
-    );
+      );
+    }
 
     // Reveal Leadership Spotlight
-    gsap.fromTo(leaderRef.current,
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: leaderRef.current,
-          start: "top 80%",
+    if (leaderRef.current) {
+      gsap.fromTo(leaderRef.current,
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: leaderRef.current,
+            start: "top 80%",
+          }
         }
-      }
-    );
+      );
+    }
 
     // Stagger Team Cards
-    gsap.fromTo(gridRef.current.children,
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: gridRef.current,
-          start: "top 80%",
+    if (gridRef.current) {
+      gsap.fromTo(gridRef.current.children,
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: gridRef.current,
+            start: "top 80%",
+          }
         }
-      }
-    );
+      );
+    }
 
     // Reveal Metrics
-    gsap.fromTo(metricsRef.current.children,
-      { y: 30, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: metricsRef.current,
-          start: "top 85%",
+    if (metricsRef.current) {
+      gsap.fromTo(metricsRef.current.children,
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: metricsRef.current,
+            start: "top 85%",
+          }
         }
-      }
-    );
+      );
+    }
 
     // Reveal Quote
-    gsap.fromTo(quoteRef.current,
-      { y: 30, opacity: 0, scale: 0.98 },
-      {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: quoteRef.current,
-          start: "top 80%",
+    if (quoteRef.current) {
+      gsap.fromTo(quoteRef.current,
+        { y: 30, opacity: 0, scale: 0.98 },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: quoteRef.current,
+            start: "top 80%",
+          }
         }
-      }
-    );
+      );
+    }
 
   }, { scope: sectionRef });
 

@@ -53,7 +53,7 @@ export function Navbar() {
     <header
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out flex items-center",
-        isScrolled 
+        isScrolled || mobileMenuOpen
           ? "h-[72px] bg-background/80 backdrop-blur-md border-b border-border/50 shadow-sm" 
           : "h-[88px] bg-transparent border-transparent"
       )}
@@ -64,7 +64,7 @@ export function Navbar() {
           href="/"
           className={cn(
             "text-2xl font-bold font-heading tracking-tight flex-shrink-0 transition-colors",
-            isScrolled ? "text-primary" : "text-white"
+            isScrolled || mobileMenuOpen ? "text-primary" : "text-white"
           )}
         >
           RENOVERA
@@ -151,7 +151,7 @@ export function Navbar() {
           <button
             className={cn(
               "md:hidden p-2 transition-colors",
-              isScrolled ? "text-foreground" : "text-white"
+              isScrolled || mobileMenuOpen ? "text-foreground" : "text-white"
             )}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Menu"
@@ -164,9 +164,8 @@ export function Navbar() {
       {/* Mobile Drawer */}
       <div
         className={cn(
-          "fixed inset-0 top-[88px] bg-background z-40 transition-transform duration-300 ease-in-out md:hidden flex flex-col border-t border-border overflow-y-auto",
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full",
-          isScrolled && "top-[72px]"
+          "fixed inset-0 top-[72px] bg-background z-40 transition-transform duration-300 ease-in-out md:hidden flex flex-col border-t border-border overflow-y-auto",
+          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
         <div className="flex flex-col p-4 gap-2">

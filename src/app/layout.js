@@ -44,7 +44,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/images/luxury-dusk-villa.png",
+        url: "/images/portfolio_hero_architecture.png",
         width: 1200,
         height: 630,
         alt: "Renovera Luxury Villa",
@@ -56,7 +56,7 @@ export const metadata = {
     title: "Renovera | Luxury Architecture Studio",
     description: "Premium architecture and luxury home renovations.",
     creator: "@RenoveraStudio",
-    images: ["/images/luxury-dusk-villa.png"],
+    images: ["/images/portfolio_hero_architecture.png"],
   },
   robots: {
     index: true,

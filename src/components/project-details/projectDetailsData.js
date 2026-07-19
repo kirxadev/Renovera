@@ -1,5 +1,5 @@
 const baseProjectData = {
-  heroImage: "/images/luxury-dusk-villa.png",
+  heroImage: "/images/portfolio_hero_architecture.png",
   overview: {
     heading: "A Masterpiece of Modern Architecture.",
     paragraphs: [
@@ -57,7 +57,7 @@ const baseProjectData = {
     "/images/project-2.png",
     "/images/project-3.png",
     "/images/project-4.png",
-    "/images/luxury-dusk-villa.png"
+    "/images/portfolio_hero_architecture.png"
   ],
   beforeAfter: {
     beforeImage: "/images/before-renovation.png",
@@ -113,7 +113,7 @@ const projectDirectory = {
     propertyType: "Heritage Estate",
     style: "Modern",
     year: "2024",
-    heroImage: "/images/luxury-dusk-villa.png",
+    heroImage: "/images/portfolio_hero_architecture.png",
   },
   "alpine-modern": {
     title: "Alpine Modern Retreat",

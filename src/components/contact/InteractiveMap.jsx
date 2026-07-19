@@ -37,7 +37,7 @@ export function InteractiveMap({ className }) {
         <div ref={mapRef} className="relative w-full h-[500px] md:h-[600px] rounded-3xl overflow-hidden bg-muted border border-[#E4E4E7]">
           {/* Simulated Map: In production, embed Google Maps iframe or use mapbox-gl */}
           <Image 
-            src="/images/luxury-dusk-villa.png" // Fallback image acting as map
+            src="/images/portfolio_hero_architecture.png" // Fallback image acting as map
             alt="Office Location Map"
             fill
             className="object-cover object-center filter grayscale opacity-30"

@@ -43,7 +43,7 @@ export function ContactHero({ className }) {
       <div className="absolute inset-0 z-0">
         <Image
           ref={bgRef}
-          src="/images/luxury-dusk-villa.png"
+          src="/images/portfolio_hero_architecture.png"
           alt="Contact Renovera Studio"
           fill
           priority

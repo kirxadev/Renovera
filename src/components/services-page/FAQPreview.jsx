@@ -57,7 +57,7 @@ export function FAQPreview({ className }) {
         </div>
 
         <div ref={containerRef} className="flex flex-col mb-16">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion className="w-full">
             {servicesPageData.faqs.map((faq, idx) => (
               <AccordionItem 
                 key={idx} 
